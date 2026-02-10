@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Mening Veb Saytim</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(120deg, #4facfe, #00f2fe);
+            color: #333;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            color: #0077ff;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0077ff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .container h2 {
+            color: #0077ff;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background: #f4f8ff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: #0077ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #005edb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: white;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mening Veb Saytim</h1>
+        <nav>
+            <a href="#">Bosh sahifa</a>
+            <a href="#">Haqida</a>
+            <a href="#">Xizmatlar</a>
+            <a href="#">Aloqa</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Xush kelibsiz 👋</h2>
+        <p>
+            Bu HTML va CSS yordamida yaratilgan oddiy, lekin chiroyli web sahifa.
+            Web dasturlashni o‘rganish uchun juda yaxshi misol.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Sayt tuzilishini yaratadi</p>
+            </div>
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Saytni chiroyli qiladi</p>
+            </div>
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Interaktivlik qo‘shadi</p>
+            </div>
+        </div>
+
+        <button onclick="alert('Rahmat! 😊')">
+            Meni bos
+        </button>
+    </div>
+
+    <footer>
+        © 2026 | Mening birinchi professional saytim
+    </footer>
+
+</body>
+</html>
