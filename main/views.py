@@ -3,6 +3,8 @@ from .models import Book, Author
 
 def main_page(request):
     if request.method == 'POST':
+
+            # kitob qo'shish
         title = request.POST.get("title")
         author_name = request.POST.get("author")
 
@@ -14,6 +16,16 @@ def main_page(request):
             title=title,
             author=author
         )
+
+    elif request.method == 'POST':
+
+            #author qo'shish
+        name = request.POST.get("name")
+        age = request.POST.get('age')
+       
+        autho = Author.objects.create(name=name,age=age)
+    
+
         return redirect("index")
 
 
